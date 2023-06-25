@@ -6,7 +6,8 @@ import Gigs from "./pages/gigs/Gigs";
 import Gig from "./pages/gig/Gig";
 import Add from "./pages/add/Add";
 import Orders from "./pages/order/Order";
-import Messages from "./pages/message/Message";
+import Message from "./pages/message/Message";
+import Messages from "./pages/messages/Messages";
 import MyGigs from "./pages/myGigs/MyGigs";
 import Footer from "./components/footer/Footer";
 import "./app.scss";
@@ -36,20 +37,12 @@ function App() {
           element: <Gigs />,
         },
         {
-          path: "/gig/:id",
-          element: <Gig />,
+          path: "/myGigs",
+          element: <MyGigs />,
         },
         {
           path: "/orders",
           element: <Orders />,
-        },
-        {
-          path: "/mygigs",
-          element: <MyGigs />,
-        },
-        {
-          path: "/add",
-          element: <Add />,
         },
         {
           path: "/messages",
@@ -57,7 +50,16 @@ function App() {
         },
         {
           path: "/message/:id",
-          element: <Messages />,
+          element: <Message />,
+        },
+
+        {
+          path: "/add",
+          element: <Add />,
+        },
+        {
+          path: "/gig/:id",
+          element: <Gig />,
         },
       ],
     },
