@@ -39,7 +39,7 @@ const GigSchema = new Schema(
       type: [String],
       required: false,
     },
-    shirtTitle: {
+    shortTitle: {
       type: String,
       required: true,
     },

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import upload from "../../utils/upload";
 import "./Register.scss";
 import newRequest from "../../utils/newRequest";
 import { useNavigate } from "react-router-dom";
+import upload from "../../utils/upload";
 
 function Register() {
   const [file, setFile] = useState(null);
@@ -18,6 +18,7 @@ function Register() {
 
   const navigate = useNavigate();
 
+
   const handleChange = (e) => {
     setUser((prev) => {
       return { ...prev, [e.target.name]: e.target.value };
@@ -29,6 +30,7 @@ function Register() {
       return { ...prev, isSeller: e.target.checked };
     });
   };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -52,7 +54,7 @@ function Register() {
           <input
             name="username"
             type="text"
-            placeholder="username"
+            placeholder="johndoe"
             onChange={handleChange}
           />
           <label htmlFor="">Email</label>
