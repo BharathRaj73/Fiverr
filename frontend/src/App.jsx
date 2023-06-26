@@ -11,6 +11,8 @@ import Messages from "./pages/messages/Messages";
 import MyGigs from "./pages/myGigs/MyGigs";
 import Footer from "./components/footer/Footer";
 import "./app.scss";
+import Register from "./pages/register/Register";
+import Login from "./pages/login/Login";
 
 function App() {
   const Layout = () => {
@@ -60,6 +62,14 @@ function App() {
         {
           path: "/gig/:id",
           element: <Gig />,
+        },
+        {
+          path: "/register",
+          element: <Register/>,
+        },
+        {
+          path: "/login",
+          element: <Login />,
         },
       ],
     },
