@@ -74,6 +74,7 @@ function Gig() {
                 <img key={img} src={img} alt="" />
               ))}
             </Slider> */}
+
             <h2>About This Gig</h2>
             <p>{data.desc}</p>
             {isLoadingUser ? (
