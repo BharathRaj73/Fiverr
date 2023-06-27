@@ -3,12 +3,12 @@ const { Schema } = mongoose;
 
 const MessageSchema = new Schema(
   {
-    ConversationId: {
-      type: Boolean,
+    conversationId: {
+      type: String,
       required: true,
     },
-    UserId: {
-      type: Boolean,
+    userId: {
+      type: String,
       required: true,
     },
     desc: {
