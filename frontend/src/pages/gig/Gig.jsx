@@ -1,6 +1,6 @@
 import React from "react";
 import "./Gig.scss";
-// import { Slider } from "infinite-react-carousel/lib";
+import { Slider } from "infinite-react-carousel/lib";
 import { Link, useParams } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import newRequest from "../../utils/newRequest";
@@ -53,7 +53,7 @@ function Gig() {
               <div className="user">
                 <img
                   className="pp"
-                  src={dataUser.img || "/img/no_avatar.jpg"}
+                  src={dataUser.img || "/img/noavatar.jpg"}
                   alt=""
                 />
                 <span>{dataUser.username}</span>
@@ -74,7 +74,6 @@ function Gig() {
                 <img key={img} src={img} alt="" />
               ))}
             </Slider> */}
-
             <h2>About This Gig</h2>
             <p>{data.desc}</p>
             {isLoadingUser ? (
@@ -85,7 +84,7 @@ function Gig() {
               <div className="seller">
                 <h2>About The Seller</h2>
                 <div className="user">
-                  <img src={dataUser.img || "/img/no_avatar.jpg"} alt="" />
+                  <img src={dataUser.img || "/img/noavatar.jpg"} alt="" />
                   <div className="info">
                     <span>{dataUser.username}</span>
                     {!isNaN(data.totalStars / data.starNumber) && (
