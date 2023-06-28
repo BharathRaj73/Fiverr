@@ -44,7 +44,6 @@ export const getOrders = async (req, res, next) => {
     next(err);
   }
 };
-
 export const confirm = async (req, res, next) => {
   try {
     const orders = await Order.findOneAndUpdate(

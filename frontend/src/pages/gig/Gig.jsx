@@ -53,7 +53,7 @@ function Gig() {
               <div className="user">
                 <img
                   className="pp"
-                  src={dataUser.img || "/img/noavatar.jpg"}
+                  src={dataUser.img || "/img/no_avatar.jpg"}
                   alt=""
                 />
                 <span>{dataUser.username}</span>
@@ -74,8 +74,18 @@ function Gig() {
                 <img key={img} src={img} alt="" />
               ))}
             </Slider> */}
+            {/* 
+            {data.images.map((img) => (
+              <img key={img} src={img} alt="" />
+            ))} */}
+
+            <div className="slider">
+              <img src={data.cover} alt="" />
+            </div>
+
             <h2>About This Gig</h2>
             <p>{data.desc}</p>
+
             {isLoadingUser ? (
               "loading"
             ) : errorUser ? (
@@ -84,7 +94,7 @@ function Gig() {
               <div className="seller">
                 <h2>About The Seller</h2>
                 <div className="user">
-                  <img src={dataUser.img || "/img/noavatar.jpg"} alt="" />
+                  <img src={dataUser.img || "/img/no_avatar.jpg"} alt="" />
                   <div className="info">
                     <span>{dataUser.username}</span>
                     {!isNaN(data.totalStars / data.starNumber) && (
