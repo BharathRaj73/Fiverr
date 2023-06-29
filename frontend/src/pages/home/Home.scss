@@ -45,24 +45,29 @@
       display: flex;
       align-items: center;
       gap: 200px;
+
       .item {
         display: flex;
         flex-direction: column;
         gap: 15px;
+
         &:first-child {
           flex: 2;
         }
+
         &:last-child {
           flex: 3;
         }
 
-        img{
+        img {
           width: 100%;
         }
+
         h1 {
           font-weight: 500;
           margin-bottom: 10px;
         }
+
         .title {
           display: flex;
           align-items: center;
@@ -70,11 +75,13 @@
           font-weight: 500;
           font-size: 18px;
           color: #666;
+
           img {
             width: 24px;
             height: 24px;
           }
         }
+
         p {
           font-size: 18px;
           font-weight: 300;
@@ -83,19 +90,11 @@
           letter-spacing: 1px;
         }
 
-        video{
+        video {
           width: 720px;
         }
       }
     }
-
-    //   &.reverse {
-    //     background-color: #0d084d;
-    //     color: white;
-    //     .container {
-    //       flex-direction: row-reverse;
-    //     }
-    //   }
   }
 
   .explore {
@@ -106,7 +105,7 @@
     .container {
       width: 1400px;
 
-      h1{
+      h1 {
         color: #555;
       }
 
@@ -132,21 +131,109 @@
             height: 50px;
           }
 
-          .line{
+          .line {
             width: 50px;
             height: 2px;
             background-color: lightgray;
-            transition: all .3s ease;
+            transition: all 0.3s ease;
           }
 
           span {
             font-weight: 300;
           }
 
-          &:hover{
-            .line{
+          &:hover {
+            .line {
               width: 80px;
               background-color: #1dbf73;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    .features {
+      padding: 30px 0;
+
+      .container {
+        gap: 20px;
+
+        .item {
+          h1 {
+            font-size: 24px;
+          }
+
+          .title {
+            font-size: 14px;
+          }
+
+          p {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+
+    .explore {
+      padding: 50px 0;
+
+      .container {
+        h1 {
+          font-size: 24px;
+        }
+
+        .items {
+          .item {
+            width: calc(50% - 10px);
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    .features {
+      padding: 80px 0;
+
+      .container {
+        flex-direction: column;
+        gap: 60px;
+
+        .item {
+          h1 {
+            font-size: 36px;
+          }
+
+          .title {
+            font-size: 16px;
+          }
+
+          p {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+
+    .explore {
+      padding: 80px 0;
+
+      .container {
+        h1 {
+          font-size: 36px;
+        }
+
+        .items {
+          .item {
+            width: calc(50% - 20px);
+            height: 180px;
+
+            img {
+              width: 60px;
+              height: 60px;
             }
           }
         }

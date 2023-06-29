@@ -115,3 +115,100 @@
       font-family: "Montserrat", sans-serif;
     }
   }
+
+  .navbar {
+    // Mobile Styles
+    @media (max-width: 767px) {
+      .container {
+        width: 100%;
+        padding: 10px;
+  
+        .logo {
+          font-size: 24px;
+  
+          .dot {
+            font-size: 18px;
+          }
+        }
+  
+        .links {
+          gap: 16px;
+  
+          .user {
+            img {
+              width: 28px;
+              height: 28px;
+            }
+    
+            .options {
+              top: 40px;
+              padding: 10px;
+              width: 160px;
+              font-size: 14px;
+            }
+          }
+    
+          button {
+            padding: 8px 16px;
+          }
+        }
+      }
+  
+      hr {
+        width: 100%;
+      }
+  
+      .menu {
+        width: 100%;
+        padding: 5px 0;
+        font-size: 14px;
+      }
+    }
+  
+    // Tablet Styles
+    @media (min-width: 768px) and (max-width: 991px) {
+      .container {
+        width: 100%;
+  
+        .logo {
+          font-size: 30px;
+  
+          .dot {
+            font-size: 24px;
+          }
+        }
+  
+        .links {
+          .user {
+            img {
+              width: 30px;
+              height: 30px;
+            }
+    
+            .options {
+              top: 40px;
+              padding: 16px;
+              width: 180px;
+              font-size: 16px;
+            }
+          }
+    
+          button {
+            padding: 10px 20px;
+          }
+        }
+      }
+  
+      hr {
+        width: 100%;
+      }
+  
+      .menu {
+        width: 100%;
+        padding: 8px 0;
+        font-size: 16px;
+      }
+    }
+  }
+  
+  
