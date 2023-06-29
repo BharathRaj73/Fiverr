@@ -1,10 +1,11 @@
 import React from "react";
 import "./Gig.scss";
-import { Slider } from "infinite-react-carousel/lib";
+// import { Slider } from "infinite-react-carousel/lib";
 import { Link, useParams } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import newRequest from "../../utils/newRequest";
 import Reviews from "../../components/reviews/Reviews";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 function Gig() {
   const { id } = useParams();
@@ -69,19 +70,34 @@ function Gig() {
                 )}
               </div>
             )}
-            {/* <Slider slidesToShow={1} arrowsScroll={1} className="slider">
+
+            <Slider slidesToShow={1} arrowsScroll={1} className="slider">
+              {data.images.map((img) => (
+                <img key={img} src={img} alt="" />
+              ))}
+            </Slider>
+
+            {/* {data.images.map((img) => (
+              <img key={img} src={img} alt="" />
+            ))}  */}
+
+            {/* <div className="slider">
+              <img src={data.cover} alt="" />
+            </div> */}
+
+            {/* <Slider>
               {data.images.map((img) => (
                 <img key={img} src={img} alt="" />
               ))}
             </Slider> */}
-            {/* 
-            {data.images.map((img) => (
-              <img key={img} src={img} alt="" />
-            ))} */}
 
-            <div className="slider">
-              <img src={data.cover} alt="" />
-            </div>
+            <Swiper>
+              <SwiperSlide>
+                {data.images.map((img) => (
+                  <img key={img} src={img} alt="" />
+                ))}
+              </SwiperSlide>
+            </Swiper>
 
             <h2>About This Gig</h2>
             <p>{data.desc}</p>
