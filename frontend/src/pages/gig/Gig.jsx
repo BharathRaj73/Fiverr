@@ -1,11 +1,11 @@
 import React from "react";
 import "./Gig.scss";
-// import { Slider } from "infinite-react-carousel/lib";
+import { Slider } from "infinite-react-carousel/lib";
 import { Link, useParams } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import newRequest from "../../utils/newRequest";
 import Reviews from "../../components/reviews/Reviews";
-import { Swiper, SwiperSlide } from "swiper/react";
+import Accordion from "../../components/accordion/Accordion";
 
 function Gig() {
   const { id } = useParams();
@@ -70,38 +70,18 @@ function Gig() {
                 )}
               </div>
             )}
-
-            <Slider slidesToShow={1} arrowsScroll={1} className="slider">
-              {data.images.map((img) => (
-                <img key={img} src={img} alt="" />
-              ))}
-            </Slider>
-
-            {/* {data.images.map((img) => (
-              <img key={img} src={img} alt="" />
-            ))}  */}
-
-            {/* <div className="slider">
-              <img src={data.cover} alt="" />
-            </div> */}
-
-            {/* <Slider>
+            {/* <Slider slidesToShow={1} arrowsScroll={1} className="slider">
               {data.images.map((img) => (
                 <img key={img} src={img} alt="" />
               ))}
             </Slider> */}
 
-            <Swiper>
-              <SwiperSlide>
-                {data.images.map((img) => (
-                  <img key={img} src={img} alt="" />
-                ))}
-              </SwiperSlide>
-            </Swiper>
+            {/* <div className="slider">
+              <img src={data.cover} alt="" />
+            </div> */}
 
             <h2>About This Gig</h2>
             <p>{data.desc}</p>
-
             {isLoadingUser ? (
               "loading"
             ) : errorUser ? (
@@ -157,11 +137,36 @@ function Gig() {
               </div>
             )}
             <Reviews gigId={id} />
+
+            <div>
+              <h2>FAQ</h2>
+              <br />
+              <Accordion
+                title="What info do you need to start working on my project?"
+                content="Name to incorporate, Slogan (optional), Website or Brief description about the company, Preferred logo style (optional), Colour preference (optional), Own idea/suggestion might you have (optional), Sample logos you like (optional)"
+              />
+              <Accordion
+                title="What is a revision?"
+                content="Revision refers to changes/modifications. You can asks for changes in the deliveries until rans out of the revisions. The number of revisions is clearly specified in the packages offered, however this does not mean that the occasional 'sneak peek' is out of the question."
+              />
+              <Accordion
+                title="What is included in basic gig ?"
+                content="The basic gig includes start-up logos for the same business name. Basic package logos includes simple and silhouette style of designs. Complex design or Mascot logos are not included in the basic package."
+              />
+              <Accordion
+                title="What do I need to provide before placing an order?"
+                content="Brief of your brand. References showing style, fonts, color palettes etc. Where your logo will be used(Profile images, print etc.)"
+              />
+              <Accordion
+                title="My budget is smaller, do you offer a discount?"
+                content="Please contact me for an individual offer!"
+              />
+            </div>
           </div>
           <div className="right">
             <div className="price">
               <h3>{data.shortTitle}</h3>
-              <h2>$ {data.price}</h2>
+              <h2>₹ {data.price}</h2>
             </div>
             <p>{data.shortDesc}</p>
             <div className="details">

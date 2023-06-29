@@ -19,7 +19,7 @@ const Review = ({ review }) => {
         "error"
       ) : (
         <div className="user">
-          <img className="pp" src={data.img || "/img/noavatar.jpg"} alt="" />
+          <img className="pp" src={data.img || "/img/no_avatar.jpg"} alt="" />
           <div className="info">
             <span>{data.username}</span>
             <div className="country">
