@@ -3,6 +3,8 @@ import { useLocation, useNavigate } from "react-router-dom";
 import newRequest from "../../utils/newRequest";
 
 const Success = () => {
+  window.scrollTo(0, 0);
+
   const { search } = useLocation();
   const navigate = useNavigate();
   const params = new URLSearchParams(search);

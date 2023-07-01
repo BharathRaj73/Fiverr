@@ -5,6 +5,8 @@ import { useQuery } from "@tanstack/react-query";
 import newRequest from "../../utils/newRequest";
 
 const Orders = () => {
+  window.scrollTo(0, 0);
+
   const currentUser = JSON.parse(localStorage.getItem("currentUser"));
 
   const navigate = useNavigate();

@@ -6,6 +6,8 @@ import "./Messages.scss";
 import moment from "moment";
 
 const Messages = () => {
+  window.scrollTo(0, 0);
+
   const currentUser = JSON.parse(localStorage.getItem("currentUser"));
 
   const queryClient = useQueryClient();

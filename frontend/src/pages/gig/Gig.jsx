@@ -8,6 +8,7 @@ import Reviews from "../../components/reviews/Reviews";
 import Accordion from "../../components/accordion/Accordion";
 
 function Gig() {
+  window.scrollTo(0, 0);
   const { id } = useParams();
 
   const { isLoading, error, data } = useQuery({

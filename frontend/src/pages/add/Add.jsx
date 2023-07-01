@@ -7,6 +7,8 @@ import newRequest from "../../utils/newRequest";
 import { useNavigate } from "react-router-dom";
 
 const Add = () => {
+  window.scrollTo(0, 0);
+
   const [singleFile, setSingleFile] = useState(undefined);
   const [files, setFiles] = useState([]);
   const [uploading, setUploading] = useState(false);

@@ -6,6 +6,7 @@ import newRequest from "../../utils/newRequest";
 import { useLocation } from "react-router-dom";
 
 function Gigs() {
+  window.scrollTo(0, 0);
   const [sort, setSort] = useState("sales");
   const [open, setOpen] = useState(false);
   const minRef = useRef();
@@ -43,9 +44,7 @@ function Gigs() {
   return (
     <div className="gigs">
       <div className="container">
-        <span className="breadcrumbs">
-          Fiverr  {">"} Gigs
-        </span>
+        <span className="breadcrumbs">Fiverr {">"} Gigs</span>
         <h1>Top rated works</h1>
         <p>
           Explore the boundaries of art and technology with Fiverr's artists

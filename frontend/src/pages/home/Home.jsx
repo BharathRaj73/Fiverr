@@ -8,6 +8,7 @@ import ProjectCard from "../../components/projectCard/ProjectCard";
 import { cards, projects } from "../../data";
 
 function Home() {
+  window.scrollTo(0, 0);
   return (
     <div className="home">
       <Featured />

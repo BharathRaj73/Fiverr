@@ -5,6 +5,8 @@ import newRequest from "../../utils/newRequest";
 import { useNavigate } from "react-router-dom";
 
 function Register() {
+  window.scrollTo(0, 0);
+
   const [file, setFile] = useState(null);
   const [user, setUser] = useState({
     username: "",

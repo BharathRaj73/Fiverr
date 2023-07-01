@@ -6,6 +6,8 @@ import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import newRequest from "../../utils/newRequest";
 
 function MyGigs() {
+  window.scrollTo(0, 0);
+
   const currentUser = getCurrentUser();
 
   const queryClient = useQueryClient();

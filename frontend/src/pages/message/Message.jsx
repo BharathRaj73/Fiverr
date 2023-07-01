@@ -5,6 +5,7 @@ import newRequest from "../../utils/newRequest";
 import "./Message.scss";
 
 const Message = () => {
+  window.scrollTo(0, 0);
   const { id } = useParams();
   const currentUser = JSON.parse(localStorage.getItem("currentUser"));
 
@@ -40,7 +41,7 @@ const Message = () => {
     <div className="message">
       <div className="container">
         <span className="breadcrumbs">
-          <Link to="/messages">Messages</Link> > John Doe >
+          <Link to="/messages">Messages</Link>
         </span>
         {isLoading ? (
           "loading"

@@ -4,6 +4,8 @@ import newRequest from "../../utils/newRequest";
 import { useNavigate } from "react-router-dom";
 
 function Login() {
+  window.scrollTo(0, 0);
+  
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState(null);
