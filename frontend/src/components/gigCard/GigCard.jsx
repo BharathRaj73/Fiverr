@@ -14,7 +14,7 @@ const GigCard = ({ item }) => {
   });
   return (
     <Link to={`/gig/${item._id}`} className="link">
-      <div className="gigCard">
+      <div className="gigCard" >
         <img src={item.cover} alt="" />
         <div className="info">
           {isLoading ? (
@@ -27,7 +27,7 @@ const GigCard = ({ item }) => {
               <span>{data.username}</span>
             </div>
           )}
-          <p>{item.desc}</p>
+          <p>{item.desc.length > 70 ? `${item.desc.substring(0,70)}...`:item.desc }</p>
           <div className="star">
             <img src="./img/star.png" alt="" />
             <span>

@@ -76,10 +76,6 @@ function Gig() {
               ))}
             </Slider>
 
-            {/* <div className="slider">
-              <img src={data.cover} alt="" />
-            </div> */}
-
             <h2>About This Gig</h2>
             <p>{data.desc}</p>
             {isLoadingUser ? (
