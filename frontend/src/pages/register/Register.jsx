@@ -52,7 +52,7 @@ function Register() {
           <input
             name="username"
             type="text"
-            placeholder="johndoe"
+            placeholder="username"
             onChange={handleChange}
           />
           <label htmlFor="">Email</label>
@@ -70,7 +70,7 @@ function Register() {
           <input
             name="country"
             type="text"
-            placeholder="Usa"
+            placeholder="India"
             onChange={handleChange}
           />
           <button type="submit">Register</button>
@@ -88,7 +88,7 @@ function Register() {
           <input
             name="phone"
             type="text"
-            placeholder="+1 234 567 89"
+            placeholder="+91 1212121212"
             onChange={handleChange}
           />
           <label htmlFor="">Description</label>
