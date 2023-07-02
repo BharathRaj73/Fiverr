@@ -38,7 +38,7 @@ const Orders = () => {
   return (
     <div className="orders">
       {isLoading ? (
-        "loading"
+        "Loading"
       ) : error ? (
         "error"
       ) : (
