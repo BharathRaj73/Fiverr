@@ -1,1 +1,1 @@
-export const BASE_URL = "https://fiverrclone-olnn.onrender.com";
+export const BASE_URL = "https://fiverrclone-olnn.onrender.com/api/v1";
