@@ -1,6 +1,6 @@
 import React from "react";
 import "./Gig.scss";
-import { Slider } from "infinite-react-carousel/lib";
+// import { Slider } from "infinite-react-carousel/lib";
 import { Link, useParams } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import newRequest from "../../utils/newRequest";
@@ -71,11 +71,20 @@ function Gig() {
                 )}
               </div>
             )}
-            <Slider slidesToShow={1} arrowsScroll={1} className="slider">
+
+            {/* <Slider slidesToShow={1} arrowsScroll={1} className="slider">
               {data?.images.map((img) => (
                 <img key={img} src={img} alt="" />
               ))}
-            </Slider>
+            </Slider> */}
+
+            <div className="logo-carousel">
+              <div className="logo">
+                {data?.images.map((img) => (
+                  <img key={img} src={img} alt="" />
+                ))}
+              </div>
+            </div>
 
             <h2>About This Gig</h2>
             <p>{data.desc}</p>

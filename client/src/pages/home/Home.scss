@@ -1,4 +1,31 @@
 .home {
+  .logo-carousel {
+    width: auto;
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+  
+    .logo {
+      display: inline-block;
+      padding: 20px;
+      animation: carouselAnimation 100s linear infinite;
+      
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+  
+  @keyframes carouselAnimation {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
   .features {
     background-color: #f1fdf7;
     display: flex;
@@ -39,6 +66,7 @@
         margin-top: 20px;
       }
     }
+
 
     .container {
       width: 1400px;
@@ -146,94 +174,6 @@
             .line {
               width: 80px;
               background-color: #1dbf73;
-            }
-          }
-        }
-      }
-    }
-  }
-
-  @media (max-width: 767px) {
-    .features {
-      padding: 30px 0;
-
-      .container {
-        gap: 20px;
-
-        .item {
-          h1 {
-            font-size: 24px;
-          }
-
-          .title {
-            font-size: 14px;
-          }
-
-          p {
-            font-size: 16px;
-          }
-        }
-      }
-    }
-
-    .explore {
-      padding: 50px 0;
-
-      .container {
-        h1 {
-          font-size: 24px;
-        }
-
-        .items {
-          .item {
-            width: calc(50% - 10px);
-            margin-bottom: 20px;
-          }
-        }
-      }
-    }
-  }
-
-  @media (min-width: 768px) and (max-width: 991px) {
-    .features {
-      padding: 80px 0;
-
-      .container {
-        flex-direction: column;
-        gap: 60px;
-
-        .item {
-          h1 {
-            font-size: 36px;
-          }
-
-          .title {
-            font-size: 16px;
-          }
-
-          p {
-            font-size: 20px;
-          }
-        }
-      }
-    }
-
-    .explore {
-      padding: 80px 0;
-
-      .container {
-        h1 {
-          font-size: 36px;
-        }
-
-        .items {
-          .item {
-            width: calc(50% - 20px);
-            height: 180px;
-
-            img {
-              width: 60px;
-              height: 60px;
             }
           }
         }
