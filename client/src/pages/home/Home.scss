@@ -1,17 +1,18 @@
 .home {
   .logo-carousel {
-    width: auto;
+    width: 100%;
     display: flex;
     overflow: hidden;
     white-space: nowrap;
   
     .logo {
+      width: 58%;
       display: inline-block;
-      padding: 20px;
-      animation: carouselAnimation 100s linear infinite;
+      padding: 10px;
+      animation: carouselAnimation 10s linear infinite;
       
       img {
-        max-width: 100%;
+        max-width: auto;
         height: auto;
       }
     }
@@ -177,7 +178,9 @@
             }
           }
         }
+        
       }
     }
+    
   }
 }

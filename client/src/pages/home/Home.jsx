@@ -5,6 +5,7 @@ import TrustedBy from "../../components/trustedBy/TrustedBy";
 // import Slide from "../../components/slide/Slide";
 import CatCard from "../../components/catCard/CatCard";
 import { cards, projects } from "../../data";
+import ProjectCard from "../../components/projectCard/ProjectCard";
 
 
 const Home = () => {
@@ -200,6 +201,13 @@ const Home = () => {
           <ProjectCard key={card.id} card={card} />
         ))}
       </Slide> */}
+        {/* <div className="logos-carousel">
+        <div className="logos">
+        {projects.map((card) => (
+          <ProjectCard key={card.id} card={card} />
+        ))}
+        </div> */}
+      {/* </div> */}
     </div>
   );
 };
