@@ -47,12 +47,3 @@ Start the server
 ```
 
 ## Screenshots
-
-![Alt text](localhost_5173_.png)
-![Alt text](localhost_5173_gigs_cat=design.png)
-![Alt text](<localhost_5173_gigs_cat=design (1).png>)
-![Alt text](localhost_5173_pay_64a00b19c804402597a8517f.png)
-![Alt text](localhost_5173_orders.png)
-![Alt text](<localhost_5173_orders (1).png>)
-![Alt text](<localhost_5173_login (1).png>)
-![Alt text](localhost_5173_login.png)
