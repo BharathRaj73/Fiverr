@@ -55,5 +55,3 @@ Start the server
 ![localhost_5173_orders (1)](https://github.com/BharathRaj73/Fiverr/assets/92433654/efa97c6d-0855-475d-a451-4ac49736677f)
 ![localhost_5173_login](https://github.com/BharathRaj73/Fiverr/assets/92433654/cb362a6b-a160-4a2a-b257-64879e8b78d9)
 ![localhost_5173_login (1)](https://github.com/BharathRaj73/Fiverr/assets/92433654/59ece7e7-f8e6-4816-a792-a285688ffbd2)
-
-
